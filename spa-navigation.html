@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Page Navigation</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="spa-wrapper">
+      <div class="navigation-containter">
+        <ul class="nav">
+          <li><a href="#home" class="home-link">HOME</a></li>
+          <li><a href="#about" class="about-link">ABOUT</a></li>
+          <li><a href="#service" class="service-link">SERVICES</a></li>
+          <li><a href="#contact" class="contact-link">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="container">
+        <div id="home-container" class="page">
+          <p>Chào mừng đến với trang chủ! Đây là nội dung của trang Home</p>
+        </div>
+        <div id="about-container" class="page">
+          <p>
+            Thông tin về chúng tôi. Chúng tôi là công ty chuyên về công nghệ web
+          </p>
+        </div>
+        <div id="service-container" class="page">
+          <p>
+            Các dịch vụ của chúng tôi: Thiết kế web, Lập trình ứng dụng, Tư vấn
+            công nghệ
+          </p>
+        </div>
+        <div id="contact-container" class="page">
+          <p>Liên hệ với chúng tôi</p>
+          <p>Email: contact@example.com</p>
+          <p>Phone: 0123456789</p>
+        </div>
+        <div class="history">
+          <p>
+            The current history length is: <span id="history-length"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./js/spa-navigation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History API Navigation</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="url-container">
+        <h1>URL Manipulation Tool</h1>
+        <form action="" class="url-form" autocomplete="off">
+          <div>
+            <label>
+              <span class="form-label">Protocol</span>
+              <select
+                name="protocol"
+                id="protocol-select"
+                class="box"
+                autofocus
+                required
+              >
+                <option value="" selected>-- Vui lòng chọn Protocol --</option>
+                <option value="http:">http:</option>
+                <option value="https:">https:</option>
+              </select>
+            </label>
+          </div>
+
+          <div>
+            <label>
+              <span class="form-label">Hostname</span>
+              <input
+                type="text"
+                id="host-name"
+                name="host-name"
+                placeholder="google.com"
+                spellcheck="true"
+                class="box"
+                required
+              />
+            </label>
+          </div>
+          <div>
+            <label>
+              <span class="form-label">Port</span>
+              <input
+                type="text"
+                id="port-input"
+                name="port"
+                placeholder="3000"
+                spellcheck="true"
+                class="box"
+              />
+            </label>
+          </div>
+          <div>
+            <label>
+              <span class="form-label">Pathname</span>
+              <input
+                type="text"
+                id="path-name"
+                name="path-name"
+                placeholder="/products/detail"
+                spellcheck="true"
+                class="box"
+              />
+            </label>
+          </div>
+
+          <div>
+            <label>
+              <span class="form-label">Search/Query</span>
+              <input
+                type="text"
+                id="query-input"
+                name="query"
+                placeholder="?id=123&name=abc"
+                spellcheck="true"
+                class="box"
+              />
+            </label>
+          </div>
+          <div>
+            <label>
+              <span class="form-label">Hash</span>
+              <input
+                type="text"
+                id="hash-input"
+                name="hash"
+                placeholder="#section1"
+                spellcheck="true"
+                class="box"
+              />
+            </label>
+          </div>
+        </form>
+        <div class="url-btn">
+          <button id="navigate-btn" class="btn">Navigate</button>
+          <button id="replace-btn" class="btn">Replace</button>
+          <button id="reload-btn" class="btn">Reload</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/url-manipulator.js"></script>
+  </body>
+</html>
