@@ -177,8 +177,17 @@ h2 {
 }
 .container .zone .btn {
   line-height: 1.5;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 600;
 }
-
+.container .zone .copy-btn {
+  background-color: #1f73c8;
+}
+.container .zone .paste-btn {
+  background-color: #3fcb5f;
+}
 /* Bài 3.2 */
 .video-container {
   display: flex;
