@@ -7,8 +7,6 @@ const takePhotoBtn = document.querySelector(".take-photo-btn");
 const downloadBtn = document.querySelector(".download-btn");
 
 let stream;
-console.log(canvas);
-
 startBtn.addEventListener("click", (e) => {
   e.preventDefault();
   //   Yêu cầu quyền truy cập camera
